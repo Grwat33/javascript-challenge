@@ -6,10 +6,8 @@ var tbody = d3.select("tbody");
 
 // append a row to tbody for every value in data
 data.forEach(function(UFO) {
-    //console.log(UFO);
     var row = tbody.append("tr");
     Object.entries(UFO).forEach(function([key, value]) {
-        //console.log(key, value);
         var cell = row.append("td");
         cell.text(value);
     });
@@ -46,6 +44,7 @@ function UFO() {
     // reset tbody
     tbody.html("");
 
+    // run through UFO function again with filteredData
     filteredData.forEach(function(UFO) {
         var row = tbody.append("tr");
         Object.entries(UFO).forEach(function([key, value]) {
