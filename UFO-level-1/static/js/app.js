@@ -41,10 +41,10 @@ function UFO() {
     // check new data
     console.log(filteredData);
     
-    // reset tbody
+    // make tbody blank
     tbody.html("");
 
-    // run through UFO function again with filteredData
+    // rerun through UFO function again with filteredData
     filteredData.forEach(function(UFO) {
         var row = tbody.append("tr");
         Object.entries(UFO).forEach(function([key, value]) {
