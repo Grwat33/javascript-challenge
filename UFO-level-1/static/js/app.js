@@ -26,7 +26,7 @@ form.on("submit", UFO);
 // finish the event handler function for the form
 function UFO() {
 
-    // prevent the page from refreshing
+    // prevent page from refreshing
     d3.event.preventDefault();
     
     // select the input element and get the raw HTML node
